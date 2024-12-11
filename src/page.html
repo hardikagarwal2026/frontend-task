@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Instrument+Serif:ital@0;1&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,100;1,200;1,300;1,400;1,500;1,800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+    <link
+      href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {
+              "instrument-serif": ['"Instrument Serif"', "serif"],
+              montserrat: ["Montserrat", "sans-serif"],
+              ubuntu: ["Ubuntu", "sans-serif"],
+              barlow: ["Barlow", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="">
+    <nav class="flex flex-row justify-between my-5 mx-20">
+      <div>Logo</div>
+
+      <div class="flex flex-row items-center justify-center gap-4">
+        <div>List your practice</div>
+        <div>For Employers</div>
+        <div>Courses</div>
+        <div>Books</div>
+        <div>Speakers</div>
+        <div>Doctors</div>
+        <div>Login/Signup</div>
+      </div>
+    </nav>
+    <section class="hero-section">
+      <!-- Ticker Component -->
+      <div class="ticker-container">
+        <!-- Left Column -->
+        <div class="ticker ticker-down">
+          <div class="ticker-content">
+            <img src="../public/images/col1-1.png" alt="img-1" />
+            <img src="../public/images/col1-2.png" alt="img-2" />
+            <img src="../public/images/col1-3.png" alt="img-3" />
+            <img src="../public/images/col1-4.png" alt="img-4" />
+            <!-- Duplicate content for seamless looping -->
+            <img src="../public/images/col1-1.png" alt="img-1" />
+            <img src="../public/images/col1-2.png" alt="img-2" />
+            <img src="../public/images/col1-3.png" alt="img-3" />
+            <img src="../public/images/col1-4.png" alt="img-4" />
+          </div>
+        </div>
+        <!-- Right Column -->
+        <div class="ticker ticker-up">
+          <div class="ticker-content">
+            <img src="../public/images/col2-1.png" alt="img-1" />
+            <img src="../public/images/col2-2.png" alt="img-2" />
+            <img src="../public/images/col2-3.png" alt="img-3" />
+            <img src="../public/images/col2-4.png" alt="img-4" />
+            <!-- Duplicate content for seamless looping -->
+            <img src="../public/images/col2-1.png" alt="img-1" />
+            <img src="../public/images/col2-2.png" alt="img-2" />
+            <img src="../public/images/col2-3.png" alt="img-3" />
+            <img src="../public/images/col2-4.png" alt="img-4" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Text Container -->
+      <div class="text-container">
+        <h1>Book an appointment with lifestyle medicine experts</h1>
+        <p>Optimize your lifestyle and reverse chronic diseases.</p>
+      </div>
+
+      <!-- Search Container -->
+      <div class="search-container">
+        <div class="flex">
+          <div class="relative">
+            <input
+              type="text"
+              id="input-group-1"
+              placeholder="Condition, procedure, speciality..."
+            />
+          </div>
+          <div class="relative">
+            <input
+              type="text"
+              id="input-group-2"
+              placeholder="City, state, or zipcode"
+            />
+          </div>
+          <div class="relative">
+            <input
+              type="text"
+              id="input-group-3"
+              placeholder="Insurance carrier"
+            />
+          </div>
+          <button>Find now</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-10 mx-20">
+      <div class="flex flex-col gap-5">
+        <div class="text-2xl font-bold">How it works</div>
+        <div class="text-xl font-semibold">
+          Lifestyle as medicine: The six pillars
+        </div>
+        <!-- Carousel Container -->
+        <div id="card-carousel" class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <!-- Card 1 -->
+              <li class="splide__slide">
+                <div class="card">
+                  <img
+                    src="../public/images/card-1.png"
+                    alt="card-1"
+                    class="card-img"
+                  />
+                  <h1 class="card-title">Nutrition</h1>
+                  <p class="card-text">
+                    Evidence supports the use of a whole food, plant-predominant
+                    diet to prevent, treat and reverse chronic illness.
+                  </p>
+                </div>
+              </li>
+              <!-- Card 2 -->
+              <li class="splide__slide">
+                <div class="card">
+                  <img
+                    src="../public/images/card-1.png"
+                    alt="card-2"
+                    class="card-img"
+                  />
+                  <h1 class="card-title">Exercise</h1>
+                  <p class="card-text">
+                    Regular physical activity is a key component of a healthy
+                    lifestyle and helps manage weight and prevent disease.
+                  </p>
+                </div>
+              </li>
+              <!-- Card 3 -->
+              <li class="splide__slide">
+                <div class="card">
+                  <img
+                    src="../public/images/card-1.png"
+                    alt="card-3"
+                    class="card-img"
+                  />
+                  <h1 class="card-title">Sleep</h1>
+                  <p class="card-text">
+                    Quality sleep plays a vital role in good health and
+                    well-being throughout your life.
+                  </p>
+                </div>
+              </li>
+              <!-- Add more cards as needed -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new Splide("#card-carousel", {
+          type: "loop",
+          perPage: 3,
+          perMove: 1,
+          gap: "1rem",
+          breakpoints: {
+            1024: {
+              perPage: 2,
+            },
+            768: {
+              perPage: 1,
+            },
+          },
+        }).mount();
+      });
+    </script>
+  </body>
+</html>
